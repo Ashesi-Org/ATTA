@@ -1,0 +1,608 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "66e1924a985c7f4d1c3664aa516a0cf0",
+    "packages": [
+        {
+            "name": "dompdf/dompdf",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/dompdf.git",
+                "reference": "fbc7c5ee5d94f7a910b78b43feb7931b7f971b59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/fbc7c5ee5d94f7a910b78b43feb7931b7f971b59",
+                "reference": "fbc7c5ee5d94f7a910b78b43feb7931b7f971b59",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/php-font-lib": "^1.0.0",
+                "dompdf/php-svg-lib": "^1.0.0",
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "masterminds/html5": "^2.0",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "ext-json": "*",
+                "ext-zip": "*",
+                "mockery/mockery": "^1.3",
+                "phpunit/phpunit": "^7.5 || ^8 || ^9 || ^10",
+                "squizlabs/php_codesniffer": "^3.5",
+                "symfony/process": "^4.4 || ^5.4 || ^6.2 || ^7.0"
+            },
+            "suggest": {
+                "ext-gd": "Needed to process images",
+                "ext-gmagick": "Improves image processing performance",
+                "ext-imagick": "Improves image processing performance",
+                "ext-zlib": "Needed for pdf stream compression"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dompdf\\": "src/"
+                },
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "The Dompdf Community",
+                    "homepage": "https://github.com/dompdf/dompdf/blob/master/AUTHORS.md"
+                }
+            ],
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "homepage": "https://github.com/dompdf/dompdf",
+            "support": {
+                "issues": "https://github.com/dompdf/dompdf/issues",
+                "source": "https://github.com/dompdf/dompdf/tree/v3.0.0"
+            },
+            "time": "2024-04-29T14:01:28+00:00"
+        },
+        {
+            "name": "dompdf/php-font-lib",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "991d6a954f6bbd7e41022198f00586b230731441"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/991d6a954f6bbd7e41022198f00586b230731441",
+                "reference": "991d6a954f6bbd7e41022198f00586b230731441",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5 || ^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FontLib\\": "src/FontLib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "The FontLib Community",
+                    "homepage": "https://github.com/dompdf/php-font-lib/blob/master/AUTHORS.md"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/dompdf/php-font-lib",
+            "support": {
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/1.0.0"
+            },
+            "time": "2024-04-29T13:40:38+00:00"
+        },
+        {
+            "name": "dompdf/php-svg-lib",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/php-svg-lib.git",
+                "reference": "eb045e518185298eb6ff8d80d0d0c6b17aecd9af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/php-svg-lib/zipball/eb045e518185298eb6ff8d80d0d0c6b17aecd9af",
+                "reference": "eb045e518185298eb6ff8d80d0d0c6b17aecd9af",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.1 || ^8.0",
+                "sabberworm/php-css-parser": "^8.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Svg\\": "src/Svg"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "The SvgLib Community",
+                    "homepage": "https://github.com/dompdf/php-svg-lib/blob/master/AUTHORS.md"
+                }
+            ],
+            "description": "A library to read, parse and export to PDF SVG files.",
+            "homepage": "https://github.com/dompdf/php-svg-lib",
+            "support": {
+                "issues": "https://github.com/dompdf/php-svg-lib/issues",
+                "source": "https://github.com/dompdf/php-svg-lib/tree/1.0.0"
+            },
+            "time": "2024-04-29T13:26:35+00:00"
+        },
+        {
+            "name": "masterminds/html5",
+            "version": "2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "f5ac2c0b0a2eefca70b2ce32a5809992227e75a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/f5ac2c0b0a2eefca70b2ce32a5809992227e75a6",
+                "reference": "f5ac2c0b0a2eefca70b2ce32a5809992227e75a6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7 || ^8 || ^9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.9.0"
+            },
+            "time": "2024-03-31T07:05:07+00:00"
+        },
+        {
+            "name": "pclzip/pclzip",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivanlanin/pclzip.git",
+                "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivanlanin/pclzip/zipball/19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
+                "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "pclzip.lib.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Blavet"
+                }
+            ],
+            "description": "A PHP library that offers compression and extraction functions for Zip formatted archives",
+            "homepage": "http://www.phpconcept.net/pclzip",
+            "keywords": [
+                "php",
+                "zip"
+            ],
+            "support": {
+                "issues": "https://github.com/ivanlanin/pclzip/issues",
+                "source": "https://github.com/ivanlanin/pclzip/tree/master"
+            },
+            "time": "2014-06-05T11:42:24+00:00"
+        },
+        {
+            "name": "phpoffice/common",
+            "version": "0.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/Common.git",
+                "reference": "edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/Common/zipball/edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d",
+                "reference": "edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d",
+                "shasum": ""
+            },
+            "require": {
+                "pclzip/pclzip": "^2.8",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "2.*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^4.8.36 || ^7.0",
+                "sebastian/phpcpd": "2.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\Common\\": "src/Common/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://rootslabs.net"
+                }
+            ],
+            "description": "PHPOffice Common",
+            "homepage": "http://phpoffice.github.io",
+            "keywords": [
+                "common",
+                "component",
+                "office",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPOffice/Common/issues",
+                "source": "https://github.com/PHPOffice/Common/tree/master"
+            },
+            "time": "2018-07-13T14:12:34+00:00"
+        },
+        {
+            "name": "phpoffice/phppresentation",
+            "version": "0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PHPPresentation.git",
+                "reference": "1fcc84072ee0061f8991b8f83050a99e706fe5ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPPresentation/zipball/1fcc84072ee0061f8991b8f83050a99e706fe5ce",
+                "reference": "1fcc84072ee0061f8991b8f83050a99e706fe5ce",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "ext-zip": "*",
+                "php": ">=5.3.0",
+                "phpoffice/common": "0.2.*"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "2.*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "3.7.*",
+                "sebastian/phpcpd": "2.*",
+                "squizlabs/php_codesniffer": "2.*",
+                "twig/twig": "1.27"
+            },
+            "suggest": {
+                "ext-gd2": "Required to add images"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpPresentation\\": "src/PhpPresentation/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker"
+                },
+                {
+                    "name": "Ivan Lanin",
+                    "homepage": "http://ivan.lanin.org"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://rootslabs.net"
+                }
+            ],
+            "description": "PHPPresentation - Read, Create and Write Presentations documents in PHP",
+            "homepage": "http://phpoffice.github.io",
+            "keywords": [
+                "LibreOffice",
+                "PowerPoint",
+                "odp",
+                "php",
+                "ppt",
+                "pptx",
+                "presentations"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPOffice/PHPPresentation/issues",
+                "source": "https://github.com/PHPOffice/PHPPresentation/tree/master"
+            },
+            "time": "2017-07-05T12:13:02+00:00"
+        },
+        {
+            "name": "sabberworm/php-css-parser",
+            "version": "v8.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MyIntervals/PHP-CSS-Parser.git",
+                "reference": "d2fb94a9641be84d79c7548c6d39bbebba6e9a70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MyIntervals/PHP-CSS-Parser/zipball/d2fb94a9641be84d79c7548c6d39bbebba6e9a70",
+                "reference": "d2fb94a9641be84d79c7548c6d39bbebba6e9a70",
+                "shasum": ""
+            },
+            "require": {
+                "ext-iconv": "*",
+                "php": ">=5.6.20"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.27"
+            },
+            "suggest": {
+                "ext-mbstring": "for parsing UTF-8 CSS"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "9.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sabberworm\\CSS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                },
+                {
+                    "name": "Oliver Klee",
+                    "email": "github@oliverklee.de"
+                },
+                {
+                    "name": "Jake Hotson",
+                    "email": "jake.github@qzdesign.co.uk"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "https://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/MyIntervals/PHP-CSS-Parser/issues",
+                "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.6.0"
+            },
+            "time": "2024-07-01T07:33:21+00:00"
+        },
+        {
+            "name": "spipu/html2pdf",
+            "version": "v5.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spipu/html2pdf.git",
+                "reference": "6c94dcd48c94c6c73f206629839c1ebd81e8c726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spipu/html2pdf/zipball/6c94dcd48c94c6c73f206629839c1ebd81e8c726",
+                "reference": "6c94dcd48c94c6c73f206629839c1ebd81e8c726",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "php": "^5.6 || ^7.0 || ^8.0",
+                "tecnickcom/tcpdf": "^6.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0 || ^9.0"
+            },
+            "suggest": {
+                "ext-gd": "Allows to embed images into the PDF",
+                "fagundes/zff-html2pdf": "if you need to integrate Html2Pdf with Zend Framework 2 (zf2)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spipu\\Html2Pdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Spipu",
+                    "homepage": "https://github.com/spipu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Html2Pdf is a HTML to PDF converter written in PHP5 (it uses TCPDF). OFFICIAL PACKAGE",
+            "homepage": "http://html2pdf.fr/",
+            "keywords": [
+                "html",
+                "html2pdf",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/spipu/html2pdf/issues",
+                "source": "https://github.com/spipu/html2pdf/tree/v5.2.8"
+            },
+            "time": "2023-07-18T14:52:59+00:00"
+        },
+        {
+            "name": "tecnickcom/tcpdf",
+            "version": "6.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tecnickcom/TCPDF.git",
+                "reference": "951eabf0338ec2522bd0d5d9c79b08a3a3d36b36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/951eabf0338ec2522bd0d5d9c79b08a3a3d36b36",
+                "reference": "951eabf0338ec2522bd0d5d9c79b08a3a3d36b36",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "config",
+                    "include",
+                    "tcpdf.php",
+                    "tcpdf_parser.php",
+                    "tcpdf_import.php",
+                    "tcpdf_barcodes_1d.php",
+                    "tcpdf_barcodes_2d.php",
+                    "include/tcpdf_colors.php",
+                    "include/tcpdf_filters.php",
+                    "include/tcpdf_font_data.php",
+                    "include/tcpdf_fonts.php",
+                    "include/tcpdf_images.php",
+                    "include/tcpdf_static.php",
+                    "include/barcodes/datamatrix.php",
+                    "include/barcodes/pdf417.php",
+                    "include/barcodes/qrcode.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+            "homepage": "http://www.tcpdf.org/",
+            "keywords": [
+                "PDFD32000-2008",
+                "TCPDF",
+                "barcodes",
+                "datamatrix",
+                "pdf",
+                "pdf417",
+                "qrcode"
+            ],
+            "support": {
+                "issues": "https://github.com/tecnickcom/TCPDF/issues",
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.7.5"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&currency_code=GBP&business=paypal@tecnick.com&item_name=donation%20for%20tcpdf%20project",
+                    "type": "custom"
+                }
+            ],
+            "time": "2024-04-20T17:25:10+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
